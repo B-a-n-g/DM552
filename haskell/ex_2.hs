@@ -51,3 +51,6 @@ modIdx (x:xs) f i = if (i == 0) then [f x] ++ xs else [x] ++ modIdx xs f (i-1)
 unique :: Eq x => [x] -> [x]
 unique [] = []
 unique (x:xs) = if elem x xs then unique xs else [x] ++ unique xs
+
+---7 FizzBuzz---
+
