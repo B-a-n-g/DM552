@@ -26,3 +26,7 @@ myzipwith :: (a -> b -> c) -> [a] -> [b] -> [c]
 myzipwith _ _ [] = []
 myzipwith _ [] _ = []
 myzipwith f (x:xs) (y:ys) = (f x y):(myzipwith f xs ys)
+
+---Fold---
+myFoldL _ []
+myFoldL f (x:xs) = 
